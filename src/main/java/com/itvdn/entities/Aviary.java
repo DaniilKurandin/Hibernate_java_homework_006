@@ -10,7 +10,7 @@ public class Aviary {
     long id;
     String biome;
     double size;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "aviary")
     List<Animal> animals;
 
     public Aviary(){

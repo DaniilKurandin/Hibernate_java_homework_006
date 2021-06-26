@@ -18,6 +18,7 @@ public class Animal {
     Vet vet;
 
     @ManyToOne
+    @JoinColumn(name = "aviaryId")
     Aviary aviary;
 
     public Animal() {}
